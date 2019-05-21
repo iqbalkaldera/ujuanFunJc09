@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawing Tools</title>
+</head>
+<body>
+        <h1>Drawing Tools</h1>
+        <p>1. Persegi</p>
+        <p>2. Segitiga Siku2 Rata Kiri</p>
+        <p>3. Segitiga Siku2 Rata Kanan</p>
+        <form id="form">
+                <p>Jenis Bangunan:
+                <br> 
+                <input type="number">
+                <p>Ukuran:
+                <br>
+                <input type="number">
+                </form>
+                <br>
+                <button onclick="drawingTools()"> Lihat </button>
+                <p id="hasil"></p>
+                <script>
+                function drawingTools() {
+                let input1 = document.getElementById("form").elements[0].value;
+                let input2 = document.getElementById("form").elements[1].value;
+                document.getElementById("hasil").innerHTML = input1+', '+input2;}
+                </script>
+</body>
+</html>
